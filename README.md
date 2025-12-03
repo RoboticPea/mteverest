@@ -25,7 +25,8 @@ Sources such as Open-Meteo or NOAA provide:
 - Jet stream position
 - Precipitation
 - Historical summit window data
-Frequency: hourly or daily.
+
+**Frequency:** hourly or daily.
 
 ### Expedition Data
 Using the Himalayan Database (public dataset):
@@ -41,20 +42,20 @@ Raw JSON/CSV is stored in the Bronze Lakehouse.
 ## Data Processing & Engineering
 Dataflows Gen2
 
--Standardize expedition schema
+- Standardize expedition schema
 - Parse dates and flags
 - Clean route and season metadata
 - Notebooks (PySpark)
 - Merge weather + expedition outcomes
 - Feature engineering, including:
-- Oxygen usage
-- Route difficulty
-- Team size
-- Predicted vs. actual weather
-- Weather window availability
-- Wind chill index
-- Icefall danger proxy
-- Time-series alignment of weather to summit attempts
+  - Oxygen usage
+  - Route difficulty
+  - Team size
+  - Predicted vs. actual weather
+  - Weather window availability
+  - Wind chill index
+  - Icefall danger proxy
+  - Time-series alignment of weather to summit attempts
 
 Processed tables are stored in the Silver and Gold Lakehouse layers.
 
