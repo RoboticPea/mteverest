@@ -1,5 +1,5 @@
 # Mt. Everest Weather & Summit Attempt Analytics
-An End-to-End Microsoft Fabric Project
+An end-to-end Microsoft Fabric Project.
 
 ## Overview
 This project builds an end-to-end analytics system in Microsoft Fabric to predict the likelihood of successful summit attempts on Mt. Everest.
