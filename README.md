@@ -2,7 +2,6 @@
 An End-to-End Microsoft Fabric Project
 
 ## Overview
-
 This project builds an end-to-end analytics system in Microsoft Fabric to predict the likelihood of successful summit attempts on Mt. Everest.
 It integrates historic expedition data, high-altitude weather forecasts, data engineering pipelines, and machine learning models to deliver actionable insights.
 
@@ -14,7 +13,6 @@ This solution demonstrates:
 - A rich Power BI dashboard for expedition intelligence
 
 ## Architecture
-
 Weather APIs + Expedition Logs → OneLake → Dataflows / Notebooks → Lakehouse (Bronze/Silver/Gold) → Warehouse → ML Model → Power BI Dashboard
 
 ## Data Ingestion
@@ -43,20 +41,20 @@ Raw JSON/CSV is stored in the Bronze Lakehouse.
 ## Data Processing & Engineering
 Dataflows Gen2
 
-Standardize expedition schema
-Parse dates and flags
-Clean route and season metadata
-Notebooks (PySpark)
-Merge weather + expedition outcomes
-Feature engineering, including:
-Oxygen usage
-Route difficulty
-Team size
-Predicted vs. actual weather
-Weather window availability
-Wind chill index
-Icefall danger proxy
-Time-series alignment of weather to summit attempts
+-Standardize expedition schema
+- Parse dates and flags
+- Clean route and season metadata
+- Notebooks (PySpark)
+- Merge weather + expedition outcomes
+- Feature engineering, including:
+- Oxygen usage
+- Route difficulty
+- Team size
+- Predicted vs. actual weather
+- Weather window availability
+- Wind chill index
+- Icefall danger proxy
+- Time-series alignment of weather to summit attempts
 
 Processed tables are stored in the Silver and Gold Lakehouse layers.
 
@@ -70,6 +68,7 @@ Models trained to predict summit success likelihood:
 ## Warehouse & Semantic Layer
 
 Dimensional model includes:
+
 `fact_summit_attempts`
 
 `fact_weather_timeseries`
@@ -96,7 +95,8 @@ Mt. Everest Expedition Intelligence Dashboard features:
 Dashboard integrates ML model predictions for enhanced insights.
 
 ## Project Structure
-`/mteverest
+```
+/mteverest
 │
 ├── data/
 │   ├── expeditions/
@@ -116,4 +116,5 @@ Dashboard integrates ML model predictions for enhanced insights.
 ├── powerbi/
 │   └── everest_dashboard.pbix
 │
-└── README.md`
+└── README.md
+```
