@@ -71,9 +71,13 @@ Models trained to predict summit success likelihood:
 
 Dimensional model includes:
 `fact_summit_attempts`
+
 `fact_weather_timeseries`
+
 `dim_climber`
+
 `dim_route`
+
 `dim_weather_condition`
 
 ## Power BI Dashboard
@@ -85,14 +89,14 @@ Mt. Everest Expedition Intelligence Dashboard features:
 - Predictive Summit Window Forecast
 - Survival Analysis & Risk Factors
 - Geospatial Map of:
-  - - Base camps
-  - - Standard routes
-  - - Success & failure hotspots
+  - Base camps
+  - Standard routes
+  - Success & failure hotspots
 
 Dashboard integrates ML model predictions for enhanced insights.
 
 ## Project Structure
-/mteverest
+`/mteverest
 │
 ├── data/
 │   ├── expeditions/
@@ -112,4 +116,4 @@ Dashboard integrates ML model predictions for enhanced insights.
 ├── powerbi/
 │   └── everest_dashboard.pbix
 │
-└── README.md
+└── README.md`
