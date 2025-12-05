@@ -3,14 +3,14 @@ An end-to-end Microsoft Fabric Project.
 
 ## Overview
 This project builds an end-to-end analytics system in Microsoft Fabric to predict the likelihood of successful summit attempts on Mt. Everest.
-It integrates historic expedition data, high-altitude weather forecasts, data engineering pipelines, and machine learning models to deliver actionable insights.
+It integrates historic expedition data, high-altitude weather forecasts, data engineering pipelines, and machine learning models.
 
 This solution demonstrates:
 - Time-series weather ingestion
 - Data virtualization in OneLake
 - Engineering pipelines using Dataflows & PySpark
 - ML models for summit success prediction
-- A rich Power BI dashboard for expedition intelligence
+- A Power BI report for expedition intelligence
 
 ## Architecture
 Weather APIs + Expedition Logs → OneLake → Dataflows / Notebooks → Lakehouse (Bronze/Silver/Gold) → Warehouse → ML Model → Power BI Dashboard
@@ -25,8 +25,6 @@ Sources such as Open-Meteo or NOAA provide:
 - Jet stream position
 - Precipitation
 - Historical summit window data
-
-**Frequency:** hourly or daily.
 
 ### Expedition Data
 Using the Himalayan Database (public dataset):
@@ -100,13 +98,11 @@ Dashboard integrates ML model predictions for enhanced insights.
 /mteverest
 │
 ├── data/
-│   ├── expeditions/
-│   ├── weather/
-│   └── synthetic_samples/
+│   ├── expeditions.zip
 │
 ├── notebooks/
-│   ├── ingestion_weather.ipynb
-│   ├── ingestion_expeditions.ipynb
+│   ├── data_ingestion.ipynb
+│   ├── data_cleansing.ipynb
 │   ├── feature_engineering.ipynb
 │   └── model_training.ipynb
 │
