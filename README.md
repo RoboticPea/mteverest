@@ -98,7 +98,7 @@ Dashboard integrates ML model predictions for enhanced insights.
 /mteverest
 │
 ├── data/
-│   ├── expeditions.zip
+│   ├── expedition_information.zip
 │
 ├── notebooks/
 │   ├── data_ingestion.ipynb
