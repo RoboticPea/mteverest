@@ -19,12 +19,12 @@ Weather APIs + Expedition Logs → OneLake → Dataflows / Notebooks → Lakehou
 
 ### Weather Data
 Sources such as Open-Meteo or NOAA provide:
-- Wind speed
+- Wind speed and wind gusts
 - Temperature
 - Pressure
-- Jet stream position
-- Precipitation
-- Historical summit window data
+- Precipitation and snowfall
+- Sunrise and sunset
+- Historical summit window data ***where can I get this?
 
 ### Expedition Data
 Using the Himalayan Database (public dataset):
@@ -101,17 +101,17 @@ Dashboard integrates ML model predictions for enhanced insights.
 │   ├── expedition_information.zip
 │
 ├── notebooks/
-│   ├── data_ingestion.ipynb
-│   ├── data_cleansing.ipynb
-│   ├── feature_engineering.ipynb
-│   └── model_training.ipynb
+│   ├── 01 Data Ingestion.ipynb
+│   ├── 02 Data Cleansing.ipynb
+│   ├── 03 Data Transformation - GOLD LAYER.ipynb ***to do
+│   ├── 04 model training.ipynb ***to do
 │
 ├── pipelines/
-│   ├── weather_ingestion_pipeline.json
-│   └── expedition_ingestion_pipeline.json
+│   ├── weather_ingestion_pipeline.json ***to do
+│   └── expedition_ingestion_pipeline.json ***to do
 │
 ├── powerbi/
-│   └── everest_dashboard.pbix
+│   └── everest_dashboard.pbix ***to do
 │
 └── README.md
 ```
