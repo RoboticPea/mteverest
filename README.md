@@ -1,5 +1,4 @@
 # Mt. Everest Weather & Summit Attempt Analytics
-An end-to-end Microsoft Fabric Project.
 
 ## Overview
 This project builds an end-to-end analytics system in Microsoft Fabric to predict the likelihood of successful summit attempts on Mt. Everest.
@@ -18,13 +17,12 @@ Weather APIs + Expedition Logs → OneLake → Dataflows / Notebooks → Lakehou
 ## Data Ingestion
 
 ### Weather Data
-Sources such as Open-Meteo or NOAA provide:
+Source: Open-Meteo 
 - Wind speed and wind gusts
 - Temperature
-- Pressure
+- Weather code
 - Precipitation and snowfall
 - Sunrise and sunset
-- Historical summit window data ***where can I get this?
 
 ### Expedition Data
 Using the Himalayan Database (public dataset):
@@ -35,7 +33,7 @@ Using the Himalayan Database (public dataset):
 - Oxygen use
 - Dates & success outcomes
 
-Raw JSON/CSV is stored in the Bronze Lakehouse.
+All this data is stored in the Bronze Layer in its most raw format.
 
 ## Data Processing & Engineering
 Dataflows Gen2
@@ -43,19 +41,15 @@ Dataflows Gen2
 - Standardize expedition schema
 - Parse dates and flags
 - Clean route and season metadata
-- Notebooks (PySpark)
 - Merge weather + expedition outcomes
 - Feature engineering, including:
   - Oxygen usage
   - Route difficulty
   - Team size
-  - Predicted vs. actual weather
   - Weather window availability
-  - Wind chill index
-  - Icefall danger proxy
   - Time-series alignment of weather to summit attempts
 
-Processed tables are stored in the Silver and Gold Lakehouse layers.
+Processed tables are stored in the Silver and Gold Layers.
 
 ## Machine Learning Modeling
 
@@ -66,17 +60,19 @@ Models trained to predict summit success likelihood:
 
 ## Warehouse & Semantic Layer
 
-Dimensional model includes:
+The semantic model includes:
 
 `fact_summit_attempts`
-
-`fact_weather_timeseries`
 
 `dim_climber`
 
 `dim_route`
 
-`dim_weather_condition`
+`dim_references`
+
+`dim_weather`
+
+`dim_weather_codes`
 
 ## Power BI Dashboard
 
