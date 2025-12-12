@@ -26,10 +26,9 @@ Source: Open-Meteo
 
 ### Expedition Data
 Using the Himalayan Database (public dataset):
-- Summit attempts
+- Summit attempts and dates
 - Fatalities
-- Expedition routes
-- Experience level
+- Expedition routes and members
 - Oxygen use
 - Dates & success outcomes
 
@@ -42,12 +41,6 @@ Dataflows Gen2
 - Parse dates and flags
 - Clean route and season metadata
 - Merge weather + expedition outcomes
-- Feature engineering, including:
-  - Oxygen usage
-  - Route difficulty
-  - Team size
-  - Weather window availability
-  - Time-series alignment of weather to summit attempts
 
 Processed tables are stored in the Silver and Gold Layers.
 
@@ -62,17 +55,17 @@ Models trained to predict summit success likelihood:
 
 The semantic model includes:
 
-`fact_summit_attempts`
+`fact_expeditions` - factual table with all the data from the expeditions
 
-`dim_climber`
+`dim_climber` - dimension with all the information available about the climbers
 
-`dim_route`
-
-`dim_references`
+`dim_route` - dimension created with the route information on the Expeditions table
 
 `dim_weather`
 
-`dim_weather_codes`
+`dim_weather_codes` - dimension just for the weather codes, retrieved on the OpenMeteo website
+
+`dim_calendar` - calendar dimension
 
 ## Power BI Dashboard
 
