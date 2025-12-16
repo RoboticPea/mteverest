@@ -7,7 +7,7 @@ It integrates historic expedition data, high-altitude weather forecasts, data en
 This solution demonstrates:
 - Time-series weather ingestion
 - Data virtualization in OneLake
-- Engineering pipelines using Dataflows & PySpark
+- Engineering pipelines using PySpark
 - ML models for summit success prediction
 - A Power BI report for expedition intelligence
 
@@ -20,6 +20,7 @@ Weather APIs + Expedition Logs → OneLake → Dataflows / Notebooks → Lakehou
 Source: Open-Meteo 
 - Wind speed and wind gusts
 - Temperature
+- Relative humidity
 - Weather code
 - Precipitation and snowfall
 - Sunrise and sunset
@@ -35,16 +36,16 @@ Using the Himalayan Database (public dataset):
 All this data is stored in the Bronze Layer in its most raw format.
 
 ## Data Processing & Engineering
-Dataflows Gen2
+Notebooks using PySpark
 
-- Standardize expedition schema
+- Standardize table schema
 - Parse dates and flags
-- Clean route and season metadata
-- Merge weather + expedition outcomes
+- Clean route and season metadata ****TO DO
+- Merge weather + expedition outcomes ****TO DO
 
 Processed tables are stored in the Silver and Gold Layers.
 
-## Machine Learning Modeling
+## Machine Learning Modeling ****TO DO
 
 Models trained to predict summit success likelihood:
 - Gradient Boosting or Random Forest
@@ -75,9 +76,8 @@ Mt. Everest Expedition Intelligence Dashboard features:
 - Year-over-Year Expedition Activity
 - Predictive Summit Window Forecast
 - Survival Analysis & Risk Factors
-- Geospatial Map of:
+- Map of:
   - Base camps
-  - Standard routes
   - Success & failure hotspots
 
 Dashboard integrates ML model predictions for enhanced insights.
