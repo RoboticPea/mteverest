@@ -87,7 +87,7 @@ Dashboard integrates ML model predictions for enhanced insights. ****TO DO
 ├── data/
 │   ├── expedition_information.zip
 │
-├── notebooks&dataflow/
+├── notebooks&dataflows/
 │   ├── 01 Data Ingestion.ipynb
 │   ├── 02 Data Cleansing.ipynb
 │   ├── 03 Data Transformation.pqt
