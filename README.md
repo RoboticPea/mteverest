@@ -36,12 +36,10 @@ Using the Himalayan Database (public dataset):
 All this data is stored in the Bronze Layer in its most raw format.
 
 ## Data Processing & Engineering
-Notebooks using PySpark
+Notebooks (using PySpark) and Dataflow Gen 2
 
 - Standardize table schema
-- Parse dates and flags
-- Clean route and season metadata ****TO DO
-- Merge weather + expedition outcomes ****TO DO
+- Create fact and dimension tables
 
 Processed tables are stored in the Silver and Gold Layers.
 
@@ -56,17 +54,17 @@ Models trained to predict summit success likelihood:
 
 The semantic model includes:
 
-`fact_expeditions` - factual table with all the data from the expeditions
+`fact_expeditions` - factual table with expedition information
 
 `dim_climber` - dimension with all the information available about the climbers
 
-`dim_route` - dimension created with the route information on the Expeditions table
+`dim_route` - dimension with the up and down route for each expedition (created from Expeditions)
 
-`dim_weather`
+`dim_camps` - dimension with camp information for each expedition (created from Expeditions)
 
-`dim_weather_codes` - dimension just for the weather codes, retrieved on the OpenMeteo website
+`dim_weather` - dimension for all the weather information available, including the description for the weather codes
 
-`dim_calendar` - calendar dimension
+`dim_date` - calendar dimension
 
 ## Power BI Dashboard
 
@@ -80,7 +78,7 @@ Mt. Everest Expedition Intelligence Dashboard features:
   - Base camps
   - Success & failure hotspots
 
-Dashboard integrates ML model predictions for enhanced insights.
+Dashboard integrates ML model predictions for enhanced insights. ****TO DO
 
 ## Project Structure
 ```
@@ -89,15 +87,11 @@ Dashboard integrates ML model predictions for enhanced insights.
 ├── data/
 │   ├── expedition_information.zip
 │
-├── notebooks/
+├── notebooks&dataflow/
 │   ├── 01 Data Ingestion.ipynb
 │   ├── 02 Data Cleansing.ipynb
-│   ├── 03 Data Transformation - GOLD LAYER.ipynb ***to do
-│   ├── 04 model training.ipynb ***to do
-│
-├── pipelines/
-│   ├── weather_ingestion_pipeline.json ***to do
-│   └── expedition_ingestion_pipeline.json ***to do
+│   ├── 03 Data Transformation.pqt
+│   ├── 04 ML Model Training.ipynb ***to do
 │
 ├── powerbi/
 │   └── everest_dashboard.pbix ***to do
