@@ -1,4 +1,4 @@
-* Overall structure
+> Overall structure
 
 Overview of attempts, summits, deaths, and success rate by year.
 
@@ -11,7 +11,7 @@ Success - green
 Attempt - blue
 Death - red
 
-* Page 1 – Attempts and success overview
+> Page 1 – Attempts and success overview
 
 Key visuals:
 
@@ -31,7 +31,7 @@ Show how attempts and summits have increased over time.
 
 Show whether success rate and death rate are improving or stable.
 
-* Page 2 – Season, route, and crowding
+> Page 2 – Season, route, and crowding
 
 Key visuals:
 
@@ -53,7 +53,7 @@ Insights to aim for:
 
 - Highlight the effect of crowding (large numbers on the same day) on outcomes.
 
-* Page 3 – Weather vs summit success
+> Page 3 – Weather vs summit success
 
 Weather measures to include at or near summit push:
 
@@ -79,7 +79,7 @@ Identify “safe” weather windows (e.g., wind below a certain threshold).
 
 Show how climbers increasingly target narrow low-wind periods.
 
-* Page 4 – Risk and outcomes
+> Page 4 – Risk and outcomes
 
 - Column chart: deaths per year vs attempts per year (with death rate line).
 
@@ -93,7 +93,7 @@ Reveal how bad weather correlates with specific types of incidents.
 
 Highlight vulnerable groups (e.g., very high winds plus crowding, inexperienced climbers in marginal weather).
 
-* Measures and DAX ideas
+> Measures 
 
 Useful measures to define:
 
@@ -112,8 +112,3 @@ For weather:
 Avg Wind 
 
 Avg Temp 
-
-
-Include KPI indicators (e.g., arrows) to show if recent seasons are safer or riskier than historical averages.
-
-If you describe what data fields you already have (dates, altitudes, exact weather sources), a more concrete set of visuals and DAX formulas can be tailored to your dataset.
