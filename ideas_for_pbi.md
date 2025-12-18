@@ -7,8 +7,11 @@ Seasonality and route analysis (spring vs autumn; Nepal vs Tibet).
 Weather vs summit success (wind, temperature, storms).
 
 Consistent color coding:
+
 Success - green 
+
 Attempt - blue
+
 Death - red
 
 > Page 1 – Attempts and success overview
@@ -27,9 +30,9 @@ Filters:
 
 Insights to aim for:
 
-Show how attempts and summits have increased over time.
+- Show how attempts and summits have increased over time.
 
-Show whether success rate and death rate are improving or stable.
+- Show whether success rate and death rate are improving or stable.
 
 > Page 2 – Season, route, and crowding
 
@@ -75,9 +78,9 @@ Visual ideas:
 
 Insights to aim for:
 
-Identify “safe” weather windows (e.g., wind below a certain threshold).
+- Identify “safe” weather windows (e.g., wind below a certain threshold).
 
-Show how climbers increasingly target narrow low-wind periods.
+- Show how climbers increasingly target narrow low-wind periods.
 
 > Page 4 – Risk and outcomes
 
@@ -89,13 +92,11 @@ Show how climbers increasingly target narrow low-wind periods.
 
 Insights:
 
-Reveal how bad weather correlates with specific types of incidents.
+- Reveal how bad weather correlates with specific types of incidents.
 
-Highlight vulnerable groups (e.g., very high winds plus crowding, inexperienced climbers in marginal weather).
+- Highlight vulnerable groups (e.g., very high winds plus crowding, inexperienced climbers in marginal weather).
 
 > Measures 
-
-Useful measures to define:
 
 Total Attempts 
 
@@ -106,8 +107,6 @@ Success Rate
 Total Deaths 
 
 Death Rate 
-
-For weather:
 
 Avg Wind 
 
