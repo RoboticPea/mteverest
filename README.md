@@ -86,6 +86,7 @@ Dashboard integrates ML model predictions for enhanced insights. ****TO DO
 │
 ├── data/
 │   ├── expedition_information.zip
+│   ├── weather_codes.csv
 │
 ├── notebooks&dataflows/
 │   ├── 01 Data Ingestion.ipynb
@@ -94,7 +95,7 @@ Dashboard integrates ML model predictions for enhanced insights. ****TO DO
 │   ├── 04 ML Model Training.ipynb ***to do
 │
 ├── powerbi/
-│   └── everest_dashboard.pbix ***to do
+│   └── mt_everest.pbix 
 │
 └── README.md
 ```
